@@ -5,8 +5,9 @@ pipeline{
     }
     stages{
         stage ("maven"){
+            dir ("/var/lib/jenkins/workspace/geo-solution/geo")
              steps{
                sh 'mvn clean validate compile install test package'
-            }
+            } 
     }   }
 }
