@@ -1,6 +1,8 @@
+
+
 import os 
 
-print("hello laura")
+print("hello Serge")
 
 os.system("nproc")
 os.system("uname -r")
