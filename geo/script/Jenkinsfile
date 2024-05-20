@@ -5,9 +5,12 @@ pipeline{
     }
     stages{
         stage ("maven"){
-            
+            dir ('geo'){
              steps{
                sh 'mvn clean validate compile install test package'
             } 
-    }   }
+            }
+      }
+      
+    }
 }
